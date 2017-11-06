@@ -1,0 +1,44 @@
+﻿@import '_elements';
+
+@media (min-width: @screen-lg) {
+
+  //reset
+  .container-fluid {
+    max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  //header
+  header {
+    &:before {
+      content: "";
+      background: url("../img/backgraound/headerBg_1.png") no-repeat center center;
+      width: 606px;
+      height: 464px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  //whatDoYouWantToDo
+  .whatDoYouWantToDo {
+    .listContent {
+      margin: 87px -7px 0;
+    }
+
+    li {
+      padding: 0 7px;
+      margin-bottom: 0;
+    }
+  }
+
+  //footer
+  footer {
+    .socialIcon {
+      right: 0;
+    }
+  }
+}

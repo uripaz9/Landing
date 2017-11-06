@@ -1,0 +1,420 @@
+﻿@import '_elements';
+
+//reset
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  min-width: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+input {
+  border-radius: 0;
+  padding: 0;
+}
+
+.focus,
+:focus {
+  outline: none !important;
+}
+
+.container-fluid {
+  margin: auto;
+  position: relative;
+  padding: 0 24px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  font: 400 1.3rem/2.0rem @font_openSans;
+}
+
+//Typography
+
+.lgTitle {
+  font: 3.2rem/4.0rem @font_RobotoSlab;
+  color: @lightBlue1;
+  letter-spacing: -0.05rem;
+
+  .boldTitle {
+    color: @white;
+    display: block;
+  }
+}
+
+.mdTitle {
+  font: 700 3.0rem/4.0rem @font_RobotoSlab;
+  color: @darkGray1;
+  text-align: center;
+  letter-spacing: -0.05rem;
+}
+
+.smTitleNarrow {
+  font: 300 1.8rem/3.1rem @font_openSans;
+  color: @darkGray2;
+}
+
+.smTitle {
+  font: 700 1.6rem/2.6rem @font_openSans;
+  color: @darkGray3;
+}
+
+.smText {
+  font: 1.3rem/2.5rem @font_openSans;
+  color: @lightBlue1;
+}
+
+.xsText {
+  font: 1.0rem/2.0rem @font_openSans;
+  color: @lightBlue2;
+  text-transform: uppercase;
+}
+
+.simpleText {
+  font: 1.3rem/2.0rem @font_openSans;
+  color: @gray1;
+
+  &.negative {
+    color: @white;
+  }
+}
+
+.blueLink {
+  font: 700 1.4rem @font_openSans;
+  color: @lightBlue3;
+  display: inline-block;
+}
+
+.blueCircleNumber {
+  font: 700 2.4rem/2.0rem @font_RobotoSlab;
+  color: @white;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+
+  &:before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-color: @lightBlue4;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+//header
+
+header {
+  background-color: @lightBlue4;
+  text-align: center;
+  margin: auto;
+  position: relative;
+
+  .container-fluid {
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    background: url("../img/backgraound/headerBg_mobile.png") no-repeat center center;
+    width: 311px;
+    height: 279px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .logoContainer {
+    position: relative;
+    height: 60px;
+    margin: 0 -24px;
+    border-bottom: 1px solid @lightBlue5;
+    line-height: 60px;
+  }
+
+  .logo {
+    display: inline-block;
+    position: absolute;
+    left: 13px;
+
+    img {
+      width: 38px;
+      height: auto;
+    }
+  }
+
+  .headerContent {
+    max-width: 770px;
+    margin: auto;
+    text-align: left;
+    padding: 60px 0 130px;
+  }
+
+  .smText {
+    padding: 20px 0;
+  }
+
+  .letsTalk {
+    box-shadow: 0 0 200px 100px rgba(3, 72, 156, 0.2);
+  }
+}
+
+//logoList
+
+.logoList {
+  background-color: @lightGray1;
+
+  .innerBox {
+    margin: auto;
+    text-align: center;
+  }
+
+  img {
+    width: 90%;
+    height: auto;
+
+    &.shopify {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  ul {
+    padding: 25px 0;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+//whatDoYouWantToDo
+
+.whatDoYouWantToDo {
+  padding: 35px 0;
+  text-align: center;
+
+  .container-fluid {
+    padding: 0 10px;
+  }
+
+  .listContent {
+    margin-top: 35px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  .innerBox {
+    border: 1px solid @lightGray2;
+    border-radius: 3px;
+    height: 100px;
+    cursor: pointer;
+  }
+
+  .mdTitle {
+    padding: 0 10px;
+  }
+
+  .xsText {
+    padding: 20px 0 10px;
+    display: block;
+  }
+
+  .imgContainer {
+    height: 100%;
+  }
+
+  .img-responsive {
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .textContainer {
+    text-align: left;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+}
+
+//howDoesItWork
+
+.howDoesItWork {
+  background-color: @lightGray1;
+  padding: 40px 0;
+  position: relative;
+
+  .listContent {
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  li {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .innerBox {
+    position: relative;
+  }
+
+  .smTitle {
+    margin-bottom: 10px;
+  }
+
+  .blueCircleNumber {
+    margin-left: 10px;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+  }
+
+  .textContainer {
+    padding-left: 36px;
+  }
+
+}
+
+//successStories
+
+.successStories {
+  padding: 50px 0 0;
+  text-align: center;
+
+  .row {
+    margin-top: 50px;
+  }
+
+  li {
+    padding: 0 5px;
+    margin-bottom: 65px;
+  }
+
+  .circleIcon {
+    width: 157px;
+    height: 157px;
+    position: relative;
+    border: 1px solid @lightGray2;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 157px;
+  }
+
+  .smTitle {
+    margin: 40px 0 15px;
+  }
+
+  .simpleText {
+    margin-bottom: 15px;
+    font: 1.4rem/2.3rem @font_openSans;
+  }
+}
+
+//getAllThisAndMore
+
+.getAllThisAndMore {
+  background-color: @lightGray1;
+  padding: 120px 0 100px;
+  margin: auto;
+  text-align: center;
+
+  .letsTalk {
+    margin-top: 60px;
+  }
+}
+
+//footer
+
+footer {
+  height: 63px;
+  background-color: @lightBlue4;
+  position: relative;
+  line-height: 63px;
+
+  .socialIcon {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 24px;
+  }
+
+  .facebookLink {
+    margin-right: 100px;
+  }
+
+  .twitterLink {
+    margin-right: 50px;
+  }
+}
+
+//letsTalk
+
+.letsTalk {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  .emailInput {
+    border: 1px solid @lightGray3;
+    border-radius: 5px;
+    background-color: @white;
+    width: 100%;
+    height: 56px;
+    .placeholder(@gray2);
+    font: italic 400 1.6rem @font_openSans;
+    padding: 0 15px;
+  }
+
+  .emailBtn {
+    border: 1px solid @orange1;
+    border-radius: 5px;
+    background-color: @yellow1;
+    width: 100%;
+    height: 56px;
+    font: 700 1.6rem @font_openSans;
+    color: @darkGray1;;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+}
+

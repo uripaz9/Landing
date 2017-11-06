@@ -1,0 +1,393 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+button {
+  min-width: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+input {
+  border-radius: 0;
+  padding: 0;
+}
+.focus,
+:focus {
+  outline: none !important;
+}
+.container-fluid {
+  margin: auto;
+  position: relative;
+  padding: 0 24px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+body {
+  font: 400 1.3rem/2rem 'Open Sans', sans-serif;
+}
+.lgTitle {
+  font: 3.2rem/4rem 'Roboto Slab', serif;
+  color: #aed2ff;
+  letter-spacing: -0.05rem;
+}
+.lgTitle .boldTitle {
+  color: #ffffff;
+  display: block;
+}
+.mdTitle {
+  font: 700 3rem/4rem 'Roboto Slab', serif;
+  color: #56575f;
+  text-align: center;
+  letter-spacing: -0.05rem;
+}
+.smTitleNarrow {
+  font: 300 1.8rem/3.1rem 'Open Sans', sans-serif;
+  color: #6b7089;
+}
+.smTitle {
+  font: 700 1.6rem/2.6rem 'Open Sans', sans-serif;
+  color: #4a4b50;
+}
+.smText {
+  font: 1.3rem/2.5rem 'Open Sans', sans-serif;
+  color: #aed2ff;
+}
+.xsText {
+  font: 1rem/2rem 'Open Sans', sans-serif;
+  color: #71b1ff;
+  text-transform: uppercase;
+}
+.simpleText {
+  font: 1.3rem/2rem 'Open Sans', sans-serif;
+  color: #9ea6b9;
+}
+.simpleText.negative {
+  color: #ffffff;
+}
+.blueLink {
+  font: 700 1.4rem 'Open Sans', sans-serif;
+  color: #157ee4;
+  display: inline-block;
+}
+.blueCircleNumber {
+  font: 700 2.4rem/2rem 'Roboto Slab', serif;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+.blueCircleNumber:before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: #1575eb;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: -1;
+}
+header {
+  background-color: #1575eb;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+header .container-fluid {
+  z-index: 1;
+}
+header:after {
+  content: "";
+  background: url("../img/backgraound/headerBg_mobile.png") no-repeat center center;
+  width: 311px;
+  height: 279px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+header .logoContainer {
+  position: relative;
+  height: 60px;
+  margin: 0 -24px;
+  border-bottom: 1px solid #3488ef;
+  line-height: 60px;
+}
+header .logo {
+  display: inline-block;
+  position: absolute;
+  left: 13px;
+}
+header .logo img {
+  width: 38px;
+  height: auto;
+}
+header .headerContent {
+  max-width: 770px;
+  margin: auto;
+  text-align: left;
+  padding: 60px 0 130px;
+}
+header .smText {
+  padding: 20px 0;
+}
+header .letsTalk {
+  box-shadow: 0 0 200px 100px rgba(3, 72, 156, 0.2);
+}
+.logoList {
+  background-color: #f8fafd;
+}
+.logoList .innerBox {
+  margin: auto;
+  text-align: center;
+}
+.logoList img {
+  width: 90%;
+  height: auto;
+}
+.logoList img.shopify {
+  width: 100%;
+  height: auto;
+}
+.logoList ul {
+  padding: 25px 0;
+}
+.logoList li {
+  margin: 10px 0;
+}
+.whatDoYouWantToDo {
+  padding: 35px 0;
+  text-align: center;
+}
+.whatDoYouWantToDo .container-fluid {
+  padding: 0 10px;
+}
+.whatDoYouWantToDo .listContent {
+  margin-top: 35px;
+}
+.whatDoYouWantToDo li {
+  margin-bottom: 15px;
+}
+.whatDoYouWantToDo .innerBox {
+  border: 1px solid #e1ebf4;
+  border-radius: 3px;
+  height: 100px;
+  cursor: pointer;
+}
+.whatDoYouWantToDo .mdTitle {
+  padding: 0 10px;
+}
+.whatDoYouWantToDo .xsText {
+  padding: 20px 0 10px;
+  display: block;
+}
+.whatDoYouWantToDo .imgContainer {
+  height: 100%;
+}
+.whatDoYouWantToDo .img-responsive {
+  margin: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.whatDoYouWantToDo .textContainer {
+  text-align: left;
+  height: 100%;
+  padding-top: 20px;
+}
+.howDoesItWork {
+  background-color: #f8fafd;
+  padding: 40px 0;
+  position: relative;
+}
+.howDoesItWork .listContent {
+  text-align: left;
+  margin-top: 40px;
+}
+.howDoesItWork li {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.howDoesItWork .innerBox {
+  position: relative;
+}
+.howDoesItWork .smTitle {
+  margin-bottom: 10px;
+}
+.howDoesItWork .blueCircleNumber {
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
+.howDoesItWork .textContainer {
+  padding-left: 36px;
+}
+.successStories {
+  padding: 50px 0 0;
+  text-align: center;
+}
+.successStories .row {
+  margin-top: 50px;
+}
+.successStories li {
+  padding: 0 5px;
+  margin-bottom: 65px;
+}
+.successStories .circleIcon {
+  width: 157px;
+  height: 157px;
+  position: relative;
+  border: 1px solid #e1ebf4;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 157px;
+}
+.successStories .smTitle {
+  margin: 40px 0 15px;
+}
+.successStories .simpleText {
+  margin-bottom: 15px;
+  font: 1.4rem/2.3rem 'Open Sans', sans-serif;
+}
+.getAllThisAndMore {
+  background-color: #f8fafd;
+  padding: 120px 0 100px;
+  margin: auto;
+  text-align: center;
+}
+.getAllThisAndMore .letsTalk {
+  margin-top: 60px;
+}
+footer {
+  height: 63px;
+  background-color: #1575eb;
+  position: relative;
+  line-height: 63px;
+}
+footer .socialIcon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 24px;
+}
+footer .facebookLink {
+  margin-right: 100px;
+}
+footer .twitterLink {
+  margin-right: 50px;
+}
+.letsTalk {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.letsTalk .emailInput {
+  border: 1px solid #e4eaf3;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 56px;
+  font: italic 400 1.6rem 'Open Sans', sans-serif;
+  padding: 0 15px;
+}
+.letsTalk .emailInput::-webkit-input-placeholder {
+  color: #7f859d;
+  opacity: 1;
+}
+.letsTalk .emailInput::-moz-placeholder {
+  color: #7f859d;
+  opacity: 1;
+}
+.letsTalk .emailInput:-ms-input-placeholder {
+  color: #7f859d;
+  opacity: 1;
+}
+.letsTalk .emailBtn {
+  border: 1px solid #d6a700;
+  border-radius: 5px;
+  background-color: #fec600;
+  width: 100%;
+  height: 56px;
+  font: 700 1.6rem 'Open Sans', sans-serif;
+  color: #56575f;
+  text-transform: uppercase;
+  margin-top: 10px;
+}

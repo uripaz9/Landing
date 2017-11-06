@@ -1,0 +1,22 @@
+﻿@import '_elements';
+
+@media (min-width: @screen-md) {
+
+  //reset
+  .container-fluid {
+    max-width: 1000px;
+  }
+
+  //whatDoYouWantToDo
+  .whatDoYouWantToDo {
+    .innerBox {
+      top: 0;
+      .transitionMove();
+
+      &:hover {
+        top: -5px;
+        box-shadow: 0 0 55px -1px rgba(154, 154, 154, 0.2);
+      }
+    }
+  }
+}

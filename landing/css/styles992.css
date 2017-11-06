@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 1000px;
+  }
+  .whatDoYouWantToDo .innerBox {
+    top: 0;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .whatDoYouWantToDo .innerBox:hover {
+    top: -5px;
+    box-shadow: 0 0 55px -1px rgba(154, 154, 154, 0.2);
+  }
+}

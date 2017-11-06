@@ -1,0 +1,255 @@
+﻿@import '_elements';
+
+@media (min-width: 768px) {
+
+  //reset
+  .container-fluid {
+    max-width: 750px;
+  }
+
+  //Typography
+  .lgTitle {
+    font: 5.0rem/7.4rem @font_RobotoSlab;
+
+    .boldTitle {
+      display: inline;
+    }
+  }
+
+  .mdTitle {
+    font: 700 3.6rem/4.0rem @font_RobotoSlab;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 67px;
+      height: 5px;
+      background-color: @lightGray4;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: -27px;
+    }
+  }
+
+  .smTitleNarrow {
+    font: 300 2.2rem/3.1rem @font_openSans;
+  }
+
+  .smTitle {
+    font: 700 1.8rem/3.0rem @font_openSans;
+  }
+
+  .smText {
+    font: 1.8rem/2.5rem @font_openSans;
+  }
+
+  .blueCircleNumber {
+    font: 700 2.0rem/2.0rem @font_RobotoSlab;
+  }
+
+  //header
+  header {
+    padding: 0;
+
+    &:after {
+      content: "";
+      background: url("../img/backgraound/headerBg_2.png") no-repeat center center;
+      width: 577px;
+      height: 477px;
+    }
+
+    .headerContent {
+      text-align: center;
+      padding: 176px 0 209px;
+    }
+
+    .smText {
+      padding: 23px 125px 36px;
+    }
+
+    .logoContainer {
+      height: 51px;
+      margin: 0;
+      border-bottom: none;
+      line-height: 51px;
+      margin-top: 12px;
+    }
+
+    .logo {
+      left: 0;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  //logoList
+  .logoList {
+
+    img {
+      width: auto;
+
+      &.shopify {
+        width: auto;
+      }
+    }
+
+    ul {
+      height: 114px;
+      padding: 0;
+    }
+
+    li {
+      line-height: 114px;
+      margin: 0;
+    }
+  }
+
+  //whatDoYouWantToDo
+  .whatDoYouWantToDo {
+    padding: 74px 0 100px;
+
+    .container-fluid {
+      padding: 0;
+    }
+
+    .listContent {
+      margin: 87px 0 0;
+    }
+
+    li {
+      padding: 0 7px;
+    }
+
+    .innerBox {
+      height: 380px;
+      padding: 40px 30px 0;
+      position: relative;
+    }
+
+    .mdTitle {
+      padding: 0;
+    }
+
+    .smTitleNarrow {
+      padding: 0 10px 7px;
+    }
+
+    .imgContainer {
+      height: auto;
+    }
+
+    .img-responsive {
+      position: static;
+      transform: none;
+      top: auto;
+      left: auto;
+    }
+
+    .textContainer {
+      position: static;
+      text-align: center;
+      height: auto;
+      padding-top: 0;
+    }
+
+    .blueLink {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 50px;
+    }
+
+  }
+
+  //howDoesItWork
+  .howDoesItWork {
+    padding: 148px 0 185px;
+
+    &:before {
+      content: "";
+      background: url("../img/backgraound/howDoesItWorkBg.png") no-repeat center center;
+      width: 586px;
+      height: 409px;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    .listContent {
+      margin: 87px -20px 0;
+    }
+
+    .textContainer {
+      padding-left: 0;
+    }
+
+    .smTitle {
+      padding: 30px 5px 20px 0;
+      margin-bottom: 0;
+    }
+
+    .blueCircleNumber {
+      margin-left: 10px;
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+
+    .simpleText {
+      padding-right: 40px;
+      font: 1.3rem/2.0rem @font_openSans;
+    }
+  }
+
+  //successStories
+  .successStories {
+    padding: 95px 0 122px;
+
+    .row {
+      margin: 87px -35px 0;
+    }
+
+    li {
+      padding: 0 35px;
+      margin-bottom: 0;
+    }
+  }
+
+  //getAllThisAndMore
+  .getAllThisAndMore {
+    padding: 134px 0 212px;
+  }
+
+  //letsTalk
+  .letsTalk {
+    width: auto;
+
+    .emailInput {
+      width: 470px;
+      padding: 0 200px 0 28px;
+    }
+
+    .emailBtn {
+      width: 190px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 0;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+      font: 700 1.8rem @font_openSans;
+      margin-top: 0;
+    }
+  }
+
+}

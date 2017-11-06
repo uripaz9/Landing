@@ -1,0 +1,53 @@
+//font family
+@font_openSans: 'Open Sans', sans-serif;
+@font_RobotoSlab: 'Roboto Slab', serif;
+
+//colors
+@white: #ffffff;
+@lightGray1: #f8fafd;
+@lightGray2: #e1ebf4;
+@lightGray3: #e4eaf3;
+@lightGray4: #e4eaf2;
+@gray1: #9ea6b9;
+@gray2: #7f859d;
+@darkGray1: #56575f;
+@darkGray2: #6b7089;
+@darkGray3: #4a4b50;
+@lightBlue1: #aed2ff;
+@lightBlue2: #71b1ff;
+@lightBlue3: #157ee4;
+@lightBlue4: #1575eb;
+@lightBlue5: #3488ef;
+@orange1: #d6a700;
+@yellow1: #fec600;
+
+//media-size
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+//placeholder
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+}
+
+//transition
+.transitionMove() {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
