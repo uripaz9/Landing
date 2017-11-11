@@ -1,1 +1,1 @@
-# Landing
+# Responsive landing page
